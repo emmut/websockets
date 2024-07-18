@@ -42,9 +42,4 @@ Bun.serve({
     return new Response(index);
   },
   port: 8080,
-  websocket: {
-    message(ws) {
-      ws.send("Hello from Bun!");
-    },
-  },
 });
