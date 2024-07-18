@@ -37,7 +37,6 @@ Bun.serve({
 
 Bun.serve({
   async fetch(req) {
-    console.log(req.url);
     const index = await Bun.file("index.html");
     return new Response(index);
   },
